@@ -33,7 +33,7 @@ class ChangeScreen extends StatelessWidget {
                         child: ourButton(
                             title: buyer,
                             onPress: () {
-                              Get.to(() => const LoginScreenBuyer());
+                              Get.to(() =>  LoginScreenBuyer());
                             })),
                     20.heightBox,
                     SizedBox(
