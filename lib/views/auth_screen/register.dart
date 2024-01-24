@@ -1,14 +1,13 @@
-import 'package:aajaibechum/buyer/screens/register.dart';
+import 'package:aajaibechum/buyer/screens/screens.dart';
 import 'package:aajaibechum/const/const.dart';
-import 'package:aajaibechum/views/auth_screen/register.dart';
-import 'package:aajaibechum/views/home_screen/home.dart';
+
 import 'package:aajaibechum/views/widgets/our_button.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:aajaibechum/views/widgets/text_style.dart';
 import 'package:get/get.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class RegisterS extends StatelessWidget {
+  const RegisterS({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +54,6 @@ class LoginScreen extends StatelessWidget {
                           )),
                     ),
                     40.heightBox,
-                    
                     TextFormField(
                       decoration: const InputDecoration(
                         hintText: passwordHint,
@@ -66,30 +64,13 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                          onPressed: () {},
-                          child: normalText(
-                            text: forgotPassword,
-                            color: purpleColor,
-                          )),
-                    ),
                     20.heightBox,
-                    SizedBox(
-                        width: context.screenWidth - 100,
-                        child: ourButton(
-                            title: login,
-                            onPress: () {
-                              Get.to(() => const Home());
-                            })),
-                    10.heightBox,
                     SizedBox(
                       width: context.screenWidth - 100,
                       child: ourButton(
-                          title: register,
+                          title: save,
                           onPress: () {
-                            Get.to(() => const RegisterS());
+                            Get.to(() => const Screens());
                           }),
                     ),
                   ],

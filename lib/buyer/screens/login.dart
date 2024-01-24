@@ -1,4 +1,5 @@
 import 'package:aajaibechum/buyer/screens/home_screen.dart';
+import 'package:aajaibechum/buyer/screens/register.dart';
 import 'package:aajaibechum/buyer/screens/screens.dart';
 import 'package:aajaibechum/const/const.dart';
 import 'package:aajaibechum/views/home_screen/home.dart';
@@ -76,12 +77,22 @@ class LoginScreenBuyer extends StatelessWidget {
                     ),
                     20.heightBox,
                     SizedBox(
-                        width: context.screenWidth - 100,
-                        child: ourButton(
-                            title: login,
-                            onPress: () {
-                              Get.to(() => const Screens());
-                            })),
+                      width: context.screenWidth - 100,
+                      child: ourButton(
+                          title: login,
+                          onPress: () {
+                            Get.to(() => const Screens());
+                          }),
+                    ),
+                    10.heightBox,
+                    SizedBox(
+                      width: context.screenWidth - 100,
+                      child: ourButton(
+                          title: register,
+                          onPress: () {
+                            Get.to(() => const Register());
+                          }),
+                    ),
                   ],
                 )
                     .box
