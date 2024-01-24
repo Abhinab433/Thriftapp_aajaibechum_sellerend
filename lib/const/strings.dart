@@ -37,4 +37,6 @@ const appname = "Aajai Bechum",
     shopDescHint = 'Enter your shop description',
     shopName = 'Magic Everywhere',
     chat = 'Chats',
-    shopWebsiteHint = 'Shop website Hint';
+    shopWebsiteHint = 'Shop website Hint',
+    seller="Seller",
+    buyer = "Buyer";

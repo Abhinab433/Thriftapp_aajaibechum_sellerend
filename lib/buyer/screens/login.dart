@@ -1,3 +1,5 @@
+import 'package:aajaibechum/buyer/screens/home_screen.dart';
+import 'package:aajaibechum/buyer/screens/screens.dart';
 import 'package:aajaibechum/const/const.dart';
 import 'package:aajaibechum/views/home_screen/home.dart';
 import 'package:aajaibechum/views/widgets/our_button.dart';
@@ -5,8 +7,8 @@ import 'package:sqflite/sqflite.dart';
 import 'package:aajaibechum/views/widgets/text_style.dart';
 import 'package:get/get.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class LoginScreenBuyer extends StatelessWidget {
+  const LoginScreenBuyer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +80,7 @@ class LoginScreen extends StatelessWidget {
                         child: ourButton(
                             title: login,
                             onPress: () {
-                              Get.to(() => const Home());
+                              Get.to(() => const Screens());
                             })),
                   ],
                 )

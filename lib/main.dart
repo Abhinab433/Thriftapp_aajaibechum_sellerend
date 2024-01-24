@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:aajaibechum/const/const.dart';
-import 'package:aajaibechum/views/auth_screen/login_screen.dart';
+import 'package:aajaibechum/change.dart';
 import 'package:get/get.dart';
 
 void main() async {
@@ -8,14 +8,14 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: appname, // Assuming 'appname' is defined somewhere
-      home: const LoginScreen(),
+      home: const ChangeScreen(),
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,

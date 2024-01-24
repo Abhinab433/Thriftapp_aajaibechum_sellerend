@@ -18,7 +18,7 @@ class ProfileScreen extends StatelessWidget {
           actions: [
             IconButton(
                 onPressed: () {
-                  Get.to(() => EditProfileScreen());
+                  Get.to(() => const EditProfileScreen());
                 },
                 icon: const Icon(Icons.edit)),
             TextButton(onPressed: () {}, child: normalText(text: logout))
